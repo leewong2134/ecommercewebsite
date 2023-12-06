@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Combined Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Logo or Brand Name -->
+        <a class="navbar-brand" href="index.html">Sneaker Store</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Left-aligned items (Regular Nav Links) -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right-aligned items (Account, Search, Cart) -->
+            <ul class="navbar-nav">
+                <!-- Search Icon -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+
+                <!-- Account Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-person"></i> My Account
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login.html">Log In</a>
+                        <a class="dropdown-item" href="register.html">Create Account</a>
+                        <!-- More options can be added here -->
+                    </div>
+                </li>
+
+                <!-- Cart Icon -->
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <!-- Section 1 -->
+        <h2 class="text-center my-4">Air Jordan's</h2>
+        <div class="row">
+            <!-- Item1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-Jordan-1.jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Retro)</h5>
+                        <p class="card-text">The original model that started it all, featuring a classic high-top design with a bold red and black color scheme, symbolizing Michael Jordan's team colors.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Retro1" 
+                                data-product-name="Air Jordan 1 (Retro)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans-1(2).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Acoustic)</h5>
+                        <p class="card-text">Known for introducing the iconic elephant print and visible air unit in the heel, this model has a mid-top design and comes in a variety of colorways including the famous black, cement grey, and fire red.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Acoustic1" 
+                                data-product-name="Air Jordan 1 (Acoustic)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans-1(3).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Chicago)</h5>
+                        <p class="card-text">This model stands out with its reflective tongue and clear rubber soles. Inspired by World War II fighter planes, it often features a shark-tooth shape on the midsole.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Chicago1" 
+                                data-product-name="Air Jordan 1 (Chicago)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>                        
+            <!-- More items... -->
+        </div>
+
+        <!-- Section 2 -->
+        <div class="row">
+            <!-- Item4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans1(4).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Royal)</h5>
+                        <p class="card-text">Famous for its use of patent leather, this sleek design is often associated with formal aesthetics. The original colorway includes a white upper with black patent leather and a clear outsole.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Royal1" 
+                                data-product-name="Air Jordan 1 (Royal)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans1(5).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Shadow)</h5>
+                        <p class="card-text">This model introduced mesh for the first time on a Jordan, with an over-molded mesh and "Flight" logo on the tongue. The original colorways include white/cement and black/red.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Shadow1" 
+                                data-product-name="Air Jordan 1 (Shadow)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>  
+            <!-- Item6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans-1(6).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Black Toe)</h5>
+                        <p class="card-text">Notable for its clean toe cap and rubber tongue with two holes for easy entry, this model is often remembered in the black/infrared colorway that Jordan wore during his first NBA championship.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="BlackToe1" 
+                                data-product-name="Air Jordan 1 (Black Toe)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>                                  
+        </div>
+        <!-- Similar structure to Section 1 -->
+
+        <!-- Section 3 -->
+        <div class="row">
+            <!-- Item7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans-1(7).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Shattered)</h5>
+                        <p class="card-text">Known for its distinctive "rising sun" stitching, this model features a full-length Zoom Air unit and a luxurious look, often seen in the white and black "Taxi" colorway.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Shattered1" 
+                                data-product-name="Air Jordan 1 (Shattered)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Item8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans-1(8).jpeg" class="card-img-top" alt="Shoe">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Pine)</h5>
+                        <p class="card-text">This model is unique for its neoprene inner bootie and tribal-inspired art on the sole, with colorways inspired by West African tribal culture and a popular Olympic colorway featuring patriotic colors.</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <!-- More options as needed -->
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Pine1" 
+                                data-product-name="Air Jordan 1 (Pine)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>  
+            <!-- Item9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pictures/Air-jordans-1(9).jpeg" class="card-img-top" alt="Air Jordan 1 (Court)">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 (Court)</h5>
+                        <p class="card-text">Recognizable for its holographic "cat eye" logo and paw-like outsole, this model is inspired by a panther and often comes in a black/red colorway known as "Bred."</p>
+                        <select class="form-control mb-2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                        <p class="card-text">$99.99</p>
+                        <button class="btn btn-primary add-to-cart" 
+                                data-product-id="Court1" 
+                                data-product-name="Air Jordan 1 (Court)" 
+                                data-product-price="99.99">
+                            Add to Cart
+                        </button>
+                
+                    </div>
+                </div>
+            </div>
+                                             
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Social media links will go here -->
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <!-- Footer Content -->
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="cart-actions.js"></script>
+</body>
+</html>

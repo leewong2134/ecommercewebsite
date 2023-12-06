@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Combined Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Logo or Brand Name -->
+        <a class="navbar-brand" href="index.html">Sneaker Store</a>
+
+        <!-- Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Left-aligned items (Regular Nav Links) -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right-aligned items (Account, Search, Cart) -->
+            <ul class="navbar-nav">
+                <!-- Search Icon -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li>
+
+                <!-- Account Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-person"></i> My Account
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="login.html">Log In</a>
+                        <a class="dropdown-item" href="register.html">Create Account</a>
+                        <!-- More options can be added here -->
+                    </div>
+                </li>
+
+                <!-- Cart Icon -->
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="bi bi-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Bootstrap Carousel -->
+<div id="sneakerCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+      <li data-target="#sneakerCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#sneakerCarousel" data-slide-to="1"></li>
+      <li data-target="#sneakerCarousel" data-slide-to="2"></li>
+      <li data-target="#sneakerCarousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="pictures/Sneaker1.jpeg" class="d-block w-100" alt="Sneaker 1">
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/Sneaker2.jpeg" class="d-block w-100" alt="Sneaker 2">
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/Sneaker3.jpeg" class="d-block w-100" alt="Sneaker 3">
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/Sneaker4.jpeg" class="d-block w-100" alt="Sneaker 4">
+      </div>
+  </div>
+  <a class="carousel-control-prev" href="#sneakerCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#sneakerCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <!-- Hero Section -->
+    <header class="jumbotron">
+        <div class="container text-center">
+            <h1 class="display-4">Welcome to Our Sneaker Store!</h1>
+            <p class="lead">Find the best sneakers from top brands at great prices.</p>
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured Sneakers -->
+        <section id="featured-sneakers">
+            <h2 class="text-center my-4">Featured Sneakers</h2>
+            <main class="container my-4">
+              <div class="row">
+                  <!-- Item1 -->
+                  <div class="col-md-4 mb-4">
+                      <div class="card">
+                          <img src="pictures/Air-Jordan-1.jpeg" class="card-img-top" alt="Shoe">
+                          <div class="card-body">
+                              <h5 class="card-title">Air Jordan 1 (Retro)</h5>
+                              <p class="card-text">The original model that started it all, featuring a classic high-top design with a bold red and black color scheme, symbolizing Michael Jordan's team colors.</p>
+                              <p class="card-text">$99.99</p>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <!-- Item2 -->
+                  <div class="col-md-4 mb-4">
+                      <div class="card">
+                          <img src="pictures/Air-jordans-1(6).jpeg" class="card-img-top" alt="Shoe">
+                          <div class="card-body">
+                              <h5 class="card-title">Air Jordan 1 (Acoustic)</h5>
+                              <p class="card-text">Known for introducing the iconic elephant print and visible air unit in the heel, this model has a mid-top design and comes in a variety of colorways including the famous black, cement grey, and fire red.</p>
+                              <p class="card-text">$99.99</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Item3 -->
+                  <div class="col-md-4 mb-4">
+                      <div class="card">
+                          <img src="pictures/Air-jordans-1(7).jpeg" class="card-img-top" alt="Shoe">
+                          <div class="card-body">
+                              <h5 class="card-title">Air Jordan 1 (Chicago)</h5>
+                              <p class="card-text">This model stands out with its reflective tongue and clear rubber soles. Inspired by World War II fighter planes, it often features a shark-tooth shape on the midsole.</p>
+                              <p class="card-text">$99.99</p>
+                          </div>
+                      </div>
+                  </div>
+        </section>
+        <!-- New Arrivals -->
+        <section id="new-arrivals">
+            <h2 class="text-center my-4">New Arrivals</h2>
+            <main class="container my-4">
+              <div class="row">
+                  <!-- Item1 -->
+                  <div class="col-md-4 mb-4">
+                      <div class="card">
+                          <img src="pictures/Air-jordans-1(3).jpeg" class="card-img-top" alt="Shoe">
+                          <div class="card-body">
+                              <h5 class="card-title">Air Jordan 1 (Retro)</h5>
+                              <p class="card-text">Famous for its use of patent leather, this sleek design is often associated with formal aesthetics. The original colorway includes a white upper with black patent leather and a clear outsole.</p>
+                              <p class="card-text">$99.99</p>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <!-- Item2 -->
+                  <div class="col-md-4 mb-4">
+                      <div class="card">
+                          <img src="pictures/Air-jordans-1(8).jpeg" class="card-img-top" alt="Shoe">
+                          <div class="card-body">
+                              <h5 class="card-title">Air Jordan 1 (Acoustic)</h5>
+                              <p class="card-text">This model introduced mesh for the first time on a Jordan, with an over-molded mesh and "Flight" logo on the tongue. The original colorways include white/cement and black/red.</p>
+                              <p class="card-text">$99.99</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Item3 -->
+                  <div class="col-md-4 mb-4">
+                      <div class="card">
+                          <img src="pictures/Air-jordans1(5).jpeg" class="card-img-top" alt="Shoe">
+                          <div class="card-body">
+                              <h5 class="card-title">Air Jordan 1 (Chicago)</h5>
+                              <p class="card-text">Notable for its clean toe cap and rubber tongue with two holes for easy entry, this model is often remembered in the black/infrared colorway that Jordan wore during his first NBA championship.</p>
+                              <p class="card-text">$99.99</p>
+                          </div>
+                      </div>
+                  </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Social media links will go here -->
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <!-- Footer Content -->
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

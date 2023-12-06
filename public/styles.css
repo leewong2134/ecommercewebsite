@@ -1,0 +1,15 @@
+/* Carousel Styling */
+
+#sneakerCarousel {
+    max-width: 1920px;
+    max-height: 1080px;
+    margin: auto; /* Centers the carousel if it's not full width */
+    overflow: hidden; /* Hides any overflow if images are larger */
+}
+
+#sneakerCarousel .carousel-item img {
+    width: 100%; /* Ensure image width is 100% of the carousel */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional styles can go here */
